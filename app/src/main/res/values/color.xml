@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources> 
+
+    <drawable name="red">#f00</drawable> 
+
+    <drawable name="green">#0f0</drawable> 
+
+    <drawable name="gray">#ccc</drawable> 
+    
+    <color name="transparent">#00000000</color>
+    <!-- 绿色 -->
+    <color name="green">#35BC9C</color>
+    <!-- 白色 -->
+    <color name="write">#FFFFFF</color>
+
+</resources> 

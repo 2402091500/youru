@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_hight"
+        android:gravity="center"
+        android:textSize="@dimen/text_midle"
+        android:background="@color/green"
+        android:textColor="@color/write"
+        android:text="联系人"/>
+
+
+
+
+    <GridView
+        android:id="@+id/gv_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent"
+        android:layout_alignParentLeft="true"
+        android:numColumns="auto_fit" >
+    </GridView>
+
+</LinearLayout>

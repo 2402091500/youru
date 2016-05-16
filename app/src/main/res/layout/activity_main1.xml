@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/caidan"
+         >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/caidan"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:background="@color/green"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:drawableTop="@drawable/img02_14"
+            android:paddingTop="5dp"
+            android:text="通话记录"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:drawableTop="@drawable/img01g_15"
+            android:paddingTop="5dp"
+            android:text="联系人"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:drawableTop="@drawable/img01g_18"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="短信"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:drawableTop="@drawable/img01g_21"
+            android:paddingTop="5dp"
+            android:text="拨号"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

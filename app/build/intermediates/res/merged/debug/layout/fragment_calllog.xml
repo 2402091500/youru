@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_hight"
+    android:gravity="center"
+    android:textSize="@dimen/text_midle"
+    android:background="@color/green"
+    android:textColor="@color/write"
+    android:text="通话记录"/>
+
+    <ListView
+        android:id="@+id/lvCallLogs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\anim\\bohao_ani.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\anim\\bohao_ani.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\anim\\translate.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\anim\\translate.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\anim\\translate2.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\anim\\translate2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_up_out.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\anim\\push_up_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_up_in.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\anim\\push_up_in.xml"
+    }
+]

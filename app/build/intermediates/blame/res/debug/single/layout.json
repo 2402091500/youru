@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\layout\\list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_animation.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\layout\\activity_animation.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main1.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\layout\\activity_main1.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\layout\\me_msg_item.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\layout\\me_msg_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\layout\\gridview_item.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\layout\\gridview_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_contact1.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\layout\\fragment_contact1.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_contact.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\layout\\fragment_contact.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_contact3.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\layout\\fragment_contact3.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_calllog.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\layout\\fragment_calllog.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_base.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\layout\\activity_base.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\layout\\actionsheet.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\layout\\actionsheet.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\layout\\contact_detail.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\layout\\contact_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\layout\\you_msg_item.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\layout\\you_msg_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\layout\\lv_msg_item.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\layout\\lv_msg_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_contact2.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\layout\\fragment_contact2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_send_msg.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\layout\\activity_send_msg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\layout\\lv_calllog_item.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\layout\\lv_calllog_item.xml"
+    }
+]

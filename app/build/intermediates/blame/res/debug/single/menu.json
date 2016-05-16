@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\menu\\animation.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\menu\\animation.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\menu\\send_msg.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\menu\\send_msg.xml"
+    }
+]
