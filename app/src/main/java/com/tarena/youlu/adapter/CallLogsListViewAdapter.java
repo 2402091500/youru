@@ -70,8 +70,8 @@ public class CallLogsListViewAdapter extends BaseAdapter{
 		
 		return convertView;
 	}
-	
-	class ViewHolder {
+
+	private static class ViewHolder {
 		ImageView iv;
 		TextView tvName;
 		TextView tvNumber;

@@ -3,7 +3,6 @@ package com.example.ui;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -11,6 +10,7 @@ import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.base.BaseActivity;
 import com.example.listener.MyPhoneListener;
 import com.example.youlu.R;
 import com.tarena.youlu.adapter.MyPagerAdapter;
@@ -26,7 +26,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends BaseActivity {
     @Bind(R.id.viewPager1)
     ViewPager viewPager1;
     @Bind(R.id.tv1)
@@ -44,7 +44,7 @@ public class MainActivity extends FragmentActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main1);
+        setActiviyContextView(R.layout.activity_main1);
         ButterKnife.bind(this);
 
 
@@ -58,6 +58,9 @@ public class MainActivity extends FragmentActivity {
         viewPager1.setAdapter(adapter);
         viewPager1.setCurrentItem(0);
         ChangeCaidan(0);
+        setTitle(null,"通话记录",null,-1,R.color.green,false,-1);
+        viewPager1.setOnPageChangeListener(new PageChangeListener());
+
 
 
     }
@@ -75,24 +78,28 @@ public class MainActivity extends FragmentActivity {
         Drawable drawable;
         switch (view.getId()) {
             case R.id.tv1:
+                setTitle(null,"通话记录",null,-1,R.color.green,false,-1);
                 ChangeCaidan(0);
                 viewPager1.setCurrentItem(0);
 //                /img02_14
 //                    img01g_12
                 break;
             case R.id.tv2:
+                setTitle(null,"联系人",null,-1,R.color.green,false,-1);
                 ChangeCaidan(1);
                 viewPager1.setCurrentItem(1);
 //                /img02_11">
 //                e/img01g_15
                 break;
             case R.id.tv3:
+                setTitle(null,"短信",null,-1,R.color.green,false,-1);
                 ChangeCaidan(2);
                 viewPager1.setCurrentItem(2);
 //                img05_11">
 //                    /img01g_18
                 break;
             case R.id.tv4:
+                setTitle(null,"拨号",null,-1,R.color.green,false,-1);
                 ChangeCaidan(3);
                 viewPager1.setCurrentItem(3);
 //                img07_19">
@@ -175,6 +182,23 @@ public class MainActivity extends FragmentActivity {
                 break;
 
 
+        }
+    }
+    class PageChangeListener implements ViewPager.OnPageChangeListener {
+
+        @Override
+        public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+        }
+
+        @Override
+        public void onPageSelected(int position) {
+
+            ChangeCaidan(position);
+        }
+
+        @Override
+        public void onPageScrollStateChanged(int state) {
         }
     }
 }

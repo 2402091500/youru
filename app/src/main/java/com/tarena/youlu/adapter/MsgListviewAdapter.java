@@ -79,7 +79,7 @@ public class MsgListviewAdapter extends BaseAdapter{
 		
 		return convertView;
 	}
-	class ViewHolder{
+	private static class ViewHolder{
 		ImageView msg_img;
 		TextView msg_name;
 		TextView tv_snippet;

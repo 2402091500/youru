@@ -29,40 +29,73 @@ import com.example.entity.Contact;
 import com.example.youlu.R;
 import com.tarena.youlu.adapter.ContactGridViewAdapter;
 
-public class ContactFragment1 extends Fragment{
+public class ContactFragment1 extends BaseFragment{
 
 	private GridView gv;
 	private List<Contact> cs;
 	private AlertDialog dialog;
+	private ContactGridViewAdapter adapter;
+//	@Override
+//	public View onCreateView(LayoutInflater inflater,
+//			ViewGroup container,
+//			Bundle savedInstanceState) {
+//
+//
+//		View view=inflater.inflate(R.layout.fragment_contact1, null);
+//
+//		gv=(GridView)view.findViewById(R.id.gv_contacts);
+//
+//		//ï¿½ï¿½È¡List<Contact>
+//		cs=new ContactBiz(getActivity()).loadContacts();
+//
+//
+//		ContactGridViewAdapter adapter=
+//				new ContactGridViewAdapter(getActivity(), cs);
+//
+//		gv.setAdapter(adapter);
+//
+//		setListener();
+//		return view;
+//	}
+
 	@Override
-	public View onCreateView(LayoutInflater inflater, 
-			ViewGroup container,
-			Bundle savedInstanceState) {
-		
-		
-		View view=inflater.inflate(R.layout.fragment_contact1, null);
-		
-		gv=(GridView)view.findViewById(R.id.gv_contacts);
-		
-		//»ñÈ¡List<Contact>
+	protected int getLayoutId() {
+		return R.layout.fragment_contact1;
+	}
+
+	@Override
+	protected void initView() {
+		gv= findView(R.id.gv_contacts);
+	}
+
+	@Override
+	protected void initData() {
 		cs=new ContactBiz(getActivity()).loadContacts();
 
-		
-		ContactGridViewAdapter adapter=
+
+		 adapter=
 				new ContactGridViewAdapter(getActivity(), cs);
-		
+
 		gv.setAdapter(adapter);
-		
+
 		setListener();
-		return view;
 	}
+
+	@Override
+	protected void showDate() {
+		adapter=
+				new ContactGridViewAdapter(getActivity(), cs);
+
+		gv.setAdapter(adapter);
+	}
+
 	private Bitmap getPhoto(int id){
 		ContentResolver r=getActivity().getContentResolver();
 		System.out.println("---");
 		Cursor c=r.query(Data.CONTENT_URI, new String[]{Data.MIMETYPE ,Data.DATA15}, Data.RAW_CONTACT_ID+"=?", new String[]{id+""}, null);
 		while(c.moveToNext()){
 			if(c.getString(0).equals(Photo.CONTENT_ITEM_TYPE)){
-				//·¢ÏÖÍ·ÏñÊý¾Ý  
+				//ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  
 				byte[] bytes=c.getBlob(1);
 				Bitmap b=BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
 				return b;
@@ -122,7 +155,7 @@ public class ContactFragment1 extends Fragment{
 		    textView4.setText(contact.getPhone());
 				window.setContentView(v);
 				
-				//¸øalertDialogÖÐ×é¼þÉèÖÃ¼àÌý
+				//ï¿½ï¿½alertDialogï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½
 				//v.findViewById(R.id.imageView1).set.....
 				
 			}

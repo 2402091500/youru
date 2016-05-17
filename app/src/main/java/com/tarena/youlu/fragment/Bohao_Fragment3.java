@@ -24,7 +24,7 @@ import com.example.dao.daoAll;
 import com.example.listener.MyPhoneListener;
 import com.example.youlu.R;
 
-public class Bohao_Fragment3 extends Fragment{
+public class Bohao_Fragment3 extends Fragment {
 	private View view;
 	private Animation ani;
 	int b=1;

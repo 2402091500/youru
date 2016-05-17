@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 17
+    compileSdkVersion 22
     buildToolsVersion "23.0.3"
 
     defaultConfig {
         applicationId "com.example.youlu"
-        minSdkVersion 8
-        targetSdkVersion 17
+        minSdkVersion 15
+        targetSdkVersion 22
     }
 
     buildTypes {
@@ -19,7 +19,7 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:18.0.0'
+    compile 'com.android.support:support-v4:22.0.0'
     compile files('libs/commons-views-1.0.0.jar')
     compile 'com.jakewharton:butterknife:7.0.0'
 }

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Administrator\Desktop\youru\youru\app\src\main\AndroidManifest.xml:2:1-60:12
+ADDED from C:\Users\Administrator\Desktop\youru\youru\app\src\main\AndroidManifest.xml:2:1-61:12
 	package
 		ADDED from C:\Users\Administrator\Desktop\youru\youru\app\src\main\AndroidManifest.xml:3:5-32
 		INJECTED from C:\Users\Administrator\Desktop\youru\youru\app\src\main\AndroidManifest.xml
@@ -17,6 +17,7 @@ ADDED from C:\Users\Administrator\Desktop\youru\youru\app\src\main\AndroidManife
 		ADDED from C:\Users\Administrator\Desktop\youru\youru\app\src\main\AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from C:\Users\Administrator\Desktop\youru\youru\app\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:22.0.0] C:\Users\Administrator\Desktop\youru\youru\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		ADDED from C:\Users\Administrator\Desktop\youru\youru\app\src\main\AndroidManifest.xml:9:9-38
 		INJECTED from C:\Users\Administrator\Desktop\youru\youru\app\src\main\AndroidManifest.xml
@@ -62,7 +63,8 @@ ADDED from C:\Users\Administrator\Desktop\youru\youru\app\src\main\AndroidManife
 	android:name
 		ADDED from C:\Users\Administrator\Desktop\youru\youru\app\src\main\AndroidManifest.xml:20:30-85
 application
-ADDED from C:\Users\Administrator\Desktop\youru\youru\app\src\main\AndroidManifest.xml:22:5-58:19
+ADDED from C:\Users\Administrator\Desktop\youru\youru\app\src\main\AndroidManifest.xml:22:5-59:19
+MERGED from [com.android.support:support-v4:22.0.0] C:\Users\Administrator\Desktop\youru\youru\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from C:\Users\Administrator\Desktop\youru\youru\app\src\main\AndroidManifest.xml:25:9-41
 	android:allowBackup
@@ -122,6 +124,10 @@ ADDED from C:\Users\Administrator\Desktop\youru\youru\app\src\main\AndroidManife
 	android:name
 		ADDED from C:\Users\Administrator\Desktop\youru\youru\app\src\main\AndroidManifest.xml:53:13-50
 activity#com.example.base.BaseActivity
-ADDED from C:\Users\Administrator\Desktop\youru\youru\app\src\main\AndroidManifest.xml:57:9-75
+ADDED from C:\Users\Administrator\Desktop\youru\youru\app\src\main\AndroidManifest.xml:57:9-66
 	android:name
 		ADDED from C:\Users\Administrator\Desktop\youru\youru\app\src\main\AndroidManifest.xml:57:19-63
+activity#com.example.base.TestActivity
+ADDED from C:\Users\Administrator\Desktop\youru\youru\app\src\main\AndroidManifest.xml:58:9-75
+	android:name
+		ADDED from C:\Users\Administrator\Desktop\youru\youru\app\src\main\AndroidManifest.xml:58:19-63

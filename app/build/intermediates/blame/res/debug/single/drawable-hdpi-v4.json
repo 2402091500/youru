@@ -152,10 +152,6 @@
         "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\drawable-hdpi\\img05_07.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\main.png",
-        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\drawable-hdpi\\main.png"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\img06_11.png",
         "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\drawable-hdpi\\img06_11.png"
     },
@@ -300,12 +296,12 @@
         "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\drawable-hdpi\\img06_07.9.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\img04_18.png",
-        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\drawable-hdpi\\img04_18.png"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\img04_15.png",
         "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\drawable-hdpi\\img04_15.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\img04_18.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\drawable-hdpi\\img04_18.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\img07_06.png",

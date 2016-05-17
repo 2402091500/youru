@@ -10,6 +10,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.provider.ContactsContract.CommonDataKinds.Photo;
 import android.provider.ContactsContract.Data;
 import android.view.LayoutInflater;
@@ -66,11 +67,14 @@ public class ContactGridViewAdapter extends BaseAdapter{
 		holder.tvName.setText(contact.getName());
 		if(position==0){
 			holder.photo.setImageBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.img02_07));
-			return convertView;
+//			return convertView;
 		}
 		Bitmap bitmap=getPhoto(contact.getId());
 		if(bitmap!=null){
 			holder.photo.setImageBitmap(bitmap);
+		}else {
+
+			holder.photo.setImageResource(R.drawable.baozou);
 		}
 		return convertView;
 	}
@@ -80,7 +84,7 @@ public class ContactGridViewAdapter extends BaseAdapter{
 		Cursor c=r.query(Data.CONTENT_URI, new String[]{Data.MIMETYPE ,Data.DATA15}, Data.RAW_CONTACT_ID+"=?", new String[]{id+""}, null);
 		while(c.moveToNext()){
 			if(c.getString(0).equals(Photo.CONTENT_ITEM_TYPE)){
-				//·¢ÏÖÍ·ÏñÊý¾Ý  
+				//ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  
 				byte[] bytes=c.getBlob(1);
 				Bitmap b=BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
 				return b;
@@ -88,8 +92,8 @@ public class ContactGridViewAdapter extends BaseAdapter{
 		}
 		return null;
 	}
-	
-	class ViewHolder {
+
+	private static class ViewHolder {
 		ImageView photo;
 		TextView tvName;
 	}

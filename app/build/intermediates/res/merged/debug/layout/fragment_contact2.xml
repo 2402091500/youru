@@ -5,14 +5,7 @@
     android:layout_height="match_parent"
     >
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/title_hight"
-        android:gravity="center"
-        android:textSize="@dimen/text_midle"
-        android:background="@color/green"
-        android:textColor="@color/write"
-        android:text="短信"/>
+
 
     <ListView
         android:id="@+id/listView1"

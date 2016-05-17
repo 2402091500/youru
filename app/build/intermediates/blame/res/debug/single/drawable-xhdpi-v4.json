@@ -1,5 +1,21 @@
 [
     {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\baozou.jpg",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\drawable-xhdpi\\baozou.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\my_add.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\drawable-xhdpi\\my_add.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\fanhui.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\drawable-xhdpi\\fanhui.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\logo.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\drawable-xhdpi\\logo.png"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
         "source": "C:\\Users\\Administrator\\Desktop\\youru\\youru\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
     }

@@ -16,23 +16,55 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 
-public class CallLogsFragment extends Fragment{
+/**
+ *
+ */
+public class CallLogsFragment extends BaseFragment{
 	
 	private ListView lvCallLogs;
-	
-	@Override
-	public View onCreateView(LayoutInflater inflater, 
+	private List<CallLogs> logs;
+	private CallLogsListViewAdapter adapter;
+
+	/*@Override
+	public View onCreateView(LayoutInflater inflater,
 			ViewGroup container,
 			Bundle savedInstanceState) {
 		View view=inflater.inflate(R.layout.fragment_calllog, null);
 		//获取集合
 		List<CallLogs> logs=new CallLogsBiz(getActivity()).loadCallLogs();
-		
+
 //		System.out.println("--------"+logs);
 		CallLogsListViewAdapter adapter=
 				new CallLogsListViewAdapter(getActivity(), logs);
 		lvCallLogs=(ListView)view.findViewById(R.id.lvCallLogs);
 		lvCallLogs.setAdapter(adapter);
 		return view;
+	}
+	*/
+
+	@Override
+	protected int getLayoutId() {
+		return R.layout.fragment_calllog;
+	}
+
+	@Override
+	protected void initView() {
+		lvCallLogs=findView(R.id.lvCallLogs);
+	}
+
+	@Override
+	protected void initData() {
+
+		//获取集合
+		 logs=new CallLogsBiz(getActivity()).loadCallLogs();
+
+		 adapter=new CallLogsListViewAdapter(getActivity(), logs);
+		lvCallLogs.setAdapter(adapter);
+	}
+
+	@Override
+	protected void showDate() {
+		 adapter=new CallLogsListViewAdapter(getActivity(), logs);
+		lvCallLogs.setAdapter(adapter);
 	}
 }

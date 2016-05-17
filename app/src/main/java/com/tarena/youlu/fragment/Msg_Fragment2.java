@@ -29,49 +29,78 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Msg_Fragment2 extends Fragment{
+public class Msg_Fragment2 extends BaseFragment{
 
 	private ListView msg_lv_listview;
 	public List<Msg> list;
+	private MsgBiz mbBiz;
+	private List<Contact> cons;
+	private MsgListviewAdapter msgaAdapter;
+//	@Override
+//	public View onCreateView(LayoutInflater inflater,
+//			ViewGroup container,
+//			Bundle savedInstanceState) {
+//		View view=inflater.inflate(R.layout.fragment_contact2, null);
+//		MsgBiz mbBiz=new MsgBiz(getActivity());
+//		 list=mbBiz.loadMsgs();
+//		ContactBiz cb=new ContactBiz(getActivity());
+//		List<Contact> cons=cb.loadContacts();
+//
+////	    		 list.get(i).setName (cons.get(i).getName());
+//
+////	    		System.out.println(cons.get(i).getName()+"---------------------------------"+list.toArray());
+//
+//
+//		MsgListviewAdapter msgaAdapter=new MsgListviewAdapter(getActivity(), list);
+//		msg_lv_listview=(ListView)view.findViewById(R.id.listView1);
+//		msg_lv_listview.setAdapter(msgaAdapter);
+//		msg_lv_listview.setOnItemClickListener(new OnItemClickListener() {
+//
+//			private OnClickListener onListener;
+//
+//			@Override
+//			public void onItemClick(AdapterView<?> parent, View view,
+//					int position, long id) {
+//
+////				RelativeLayout layout = (RelativeLayout)msg_lv_listview.getChildAt(position);// ï¿½ï¿½ï¿½ï¿½ï¿½itemï¿½ï¿½layout
+////				TextView et = (TextView) layout.findViewById(R.id.msg_name);
+////
+//				String test = list.get(position).getName();
+//
+//				  Intent intent=new Intent(getActivity(),SendMsg.class);
+//				  intent.putExtra("position", position);
+//				  intent.putExtra("number", test);
+//				  startActivity(intent);
+//			}});
+//
+//
+//		return view;
+//	}
+
 	@Override
-	public View onCreateView(LayoutInflater inflater, 
-			ViewGroup container,
-			Bundle savedInstanceState) {
-		View view=inflater.inflate(R.layout.fragment_contact2, null);
-		MsgBiz mbBiz=new MsgBiz(getActivity());
-		 list=mbBiz.loadMsgs();
-		ContactBiz cb=new ContactBiz(getActivity());
-		List<Contact> cons=cb.loadContacts();
-	    
-//	    		 list.get(i).setName (cons.get(i).getName());
-	    		
-//	    		System.out.println(cons.get(i).getName()+"---------------------------------"+list.toArray());
-	    				
-		
-		MsgListviewAdapter msgaAdapter=new MsgListviewAdapter(getActivity(), list);
-		msg_lv_listview=(ListView)view.findViewById(R.id.listView1);
-		msg_lv_listview.setAdapter(msgaAdapter);
-		msg_lv_listview.setOnItemClickListener(new OnItemClickListener() {
-
-			private OnClickListener onListener;
-
-			@Override
-			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
-				
-//				RelativeLayout layout = (RelativeLayout)msg_lv_listview.getChildAt(position);// »ñµÃ×ÓitemµÄlayout
-//				TextView et = (TextView) layout.findViewById(R.id.msg_name);
-//				
-				String test = list.get(position).getName();
-				
-				  Intent intent=new Intent(getActivity(),SendMsg.class);
-				  intent.putExtra("position", position);
-				  intent.putExtra("number", test);
-				  startActivity(intent);
-			}});
-		
-		
-		return view;
+	protected int getLayoutId() {
+		return R.layout.fragment_contact2;
 	}
-	
+
+	@Override
+	protected void initView() {
+		msg_lv_listview=findView(R.id.listView1);
+	}
+
+	@Override
+	protected void initData() {
+		 mbBiz=new MsgBiz(getActivity());
+		list=mbBiz.loadMsgs();
+		ContactBiz cb=new ContactBiz(getActivity());
+		 cons=cb.loadContacts();
+
+		 msgaAdapter=new MsgListviewAdapter(getActivity(), list);
+		msg_lv_listview.setAdapter(msgaAdapter);
+	}
+
+	@Override
+	protected void showDate() {
+		msgaAdapter=new MsgListviewAdapter(getActivity(), list);
+		msg_lv_listview.setAdapter(msgaAdapter);
+	}
 }

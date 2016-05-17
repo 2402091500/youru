@@ -5,8 +5,8 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="17" />
+        android:minSdkVersion="15"
+        android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
@@ -16,10 +16,13 @@
     <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
     <uses-permission android:name="android.permission.READ_SMS" />
 
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:name="com.android.tools.fd.runtime.BootstrapApplication"
         android:allowBackup="true"
-        android:icon="@drawable/main"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Light.NoTitleBar" >
 
@@ -33,13 +36,12 @@
 
         <activity
             android:name="com.example.ui.myAnimation"
-            android:icon="@drawable/main"
-            android:label="@string/app_name" >
-        </activity>
+            android:icon="@drawable/logo"
+            android:label="@string/app_name" />
         <activity
             android:name="com.example.ui.MainActivity"
             android:allowBackup="false"
-            android:icon="@drawable/main"
+            android:icon="@drawable/logo"
             android:label="@string/title_activity_animation"
             android:theme="@android:style/Theme.Light.NoTitleBar" >
             <intent-filter>
@@ -50,10 +52,11 @@
         </activity>
         <activity
             android:name="com.example.ui.SendMsg"
-            android:icon="@drawable/main"
+            android:icon="@drawable/logo"
             android:label="@string/title_activity_send_msg"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
-        </activity>
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity android:name="com.example.base.BaseActivity" />
+        <activity android:name="com.example.base.TestActivity" />
     </application>
 
 </manifest>
