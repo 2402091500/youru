@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -39,7 +39,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:collapseColumns="4"
-        android:visibility="gone"
+        android:visibility="visible"
         android:background="@drawable/bo"
         android:gravity="center" >
 
@@ -189,4 +189,4 @@
     
     </TableLayout>
 
-</LinearLayout>
+</RelativeLayout>

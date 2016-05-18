@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">友录</string>
+    <string name="app_name">老同学</string>
     <string name="action_settings">设置</string>
     <string name="hello_world">Hello world!</string>
-    <string name="title_activity_animation">友录</string>
+    <string name="title_activity_animation">老同学</string>
     <string name="title_activity_send_msg">SendMsg</string>
     <string name="title">确定要删除记录?</string>
     <string name="delete">删除</string>

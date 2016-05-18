@@ -195,6 +195,22 @@ public class MainActivity extends BaseActivity {
         public void onPageSelected(int position) {
 
             ChangeCaidan(position);
+            switch (position){
+
+                case 0:
+
+            setTitle(null,"通话记录",null,-1,R.color.green,false,-1);
+                    break;
+                case 1:
+            setTitle(null,"联系人",null,-1,R.color.green,false,-1);
+                    break;
+                case 2:
+            setTitle(null,"短信",null,-1,R.color.green,false,-1);
+                    break;
+                case 3:
+            setTitle(null,"拨号",null,-1,R.color.green,false,-1);
+                    break;
+            }
         }
 
         @Override

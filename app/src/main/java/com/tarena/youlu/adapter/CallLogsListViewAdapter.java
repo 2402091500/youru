@@ -58,16 +58,20 @@ public class CallLogsListViewAdapter extends BaseAdapter{
 		}else{
 			holder=(ViewHolder)convertView.getTag();
 		}
-		//»ñÈ¡µ±Ç°ÏÔÊ¾µÄcalllogÐÅÏ¢
 		CallLogs log=logs.get(position);
-		holder.tvName.setText(log.getName()==null ? "Î´ÖªºÅÂë" : log.getName());
-		//tvNameÓ¦¸ÃÏÔÊ¾ºìÉ«µÄ×Ö
+		holder.tvName.setText(log.getName()==null ? "æ²¡æœ‰å¤‡æ³¨" : log.getName());
+
 		if(log.getType()==Calls.MISSED_TYPE){
-			holder.tvName.setTextColor(Color.RED);
+			holder.tvNumber.setTextColor(Color.RED);
 		}
-		holder.tvNumber.setText(log.getNumber());
-		holder.tvTime.setText(new SimpleDateFormat("HH:mm").format(new Date(log.getTime())));
-		
+		if(log.getNumber().length()>11&&!log.getNumber().startsWith("0")){
+			String number=log.getNumber().substring(0,log.getNumber().length()-11)+" + "+log.getNumber().substring(log.getNumber().length()-11,log.getNumber().length()-1);
+		    holder.tvNumber.setText(number);
+		}else{
+			holder.tvNumber.setText(log.getNumber());
+		}
+		holder.tvTime.setText(new SimpleDateFormat("yyyyå¹´MMæœˆddæ—¥ hh:mm").format(new Date(log.getTime())));
+		holder.iv.setImageResource(R.drawable.baozou);
 		return convertView;
 	}
 

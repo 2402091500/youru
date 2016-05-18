@@ -15,12 +15,12 @@
     <drawable name="green">#0f0</drawable>
     <drawable name="red">#f00</drawable>
     <string name="action_settings">设置</string>
-    <string name="app_name">友录</string>
+    <string name="app_name">老同学</string>
     <string name="cancel">取消</string>
     <string name="delete">删除</string>
     <string name="hello_world">Hello world!</string>
     <string name="title">确定要删除记录?</string>
-    <string name="title_activity_animation">友录</string>
+    <string name="title_activity_animation">老同学</string>
     <string name="title_activity_send_msg">SendMsg</string>
     <style name="ActionSheet" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>

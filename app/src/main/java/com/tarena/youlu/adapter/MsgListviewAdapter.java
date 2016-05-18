@@ -2,6 +2,7 @@ package com.tarena.youlu.adapter;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 import com.example.entity.Msg;
@@ -62,20 +63,21 @@ public class MsgListviewAdapter extends BaseAdapter{
 			holder=new ViewHolder();
 			
 			convertView=inflater.inflate(R.layout.lv_msg_item, null);
-			msg_img=(ImageView)convertView.findViewById(R.id.msg_img);
-			msg_name=(TextView)convertView.findViewById(R.id.msg_name);
-			tv_snippet=(TextView)convertView.findViewById(R.id.tv_snippet);
-			tvtime=(TextView)convertView.findViewById(R.id.tvTime);
+			holder.msg_img=(ImageView)convertView.findViewById(R.id.msg_img);
+			holder.msg_name=(TextView)convertView.findViewById(R.id.msg_name);
+			holder.tv_snippet=(TextView)convertView.findViewById(R.id.tv_snippet);
+			holder.tvtime=(TextView)convertView.findViewById(R.id.tvTime);
 			convertView.setTag(holder);
 			
 		}else{
 			holder=(ViewHolder)convertView.getTag();
 		}
 			Msg msg=list.get(position);
-			msg_img.setImageResource(R.drawable.qq);
-			msg_name.setText(msg.getName());
-			tv_snippet.setText(msg.getSnippet());
-			tvtime.setText(msg.getDate());
+		holder.msg_img.setImageResource(R.drawable.baozou);
+		holder.msg_name.setText(msg.getName());
+		holder.tv_snippet.setText(msg.getSnippet());
+		System.out.println(msg.getDate());
+		holder.tvtime.setText(msg.getDate().toString());
 		
 		return convertView;
 	}

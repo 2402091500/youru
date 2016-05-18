@@ -29,7 +29,7 @@ public class ContactGridViewAdapter extends BaseAdapter{
 	public ContactGridViewAdapter(Context context, List<Contact> cs) {
 		this.context=context;
 		this.cs=cs;
-		cs.add(0, new Contact(0, "ÃÌº”¡™œµ»À",
+		cs.add(0, new Contact(0, "Ê∑ªÂä†ËÅîÁ≥ª‰∫∫",
 				0, null, null, null));
 		inflater=LayoutInflater.from(context);
 	}
@@ -69,7 +69,8 @@ public class ContactGridViewAdapter extends BaseAdapter{
 			holder.photo.setImageBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.img02_07));
 //			return convertView;
 		}
-		Bitmap bitmap=getPhoto(contact.getId());
+		Bitmap bitmap=null;
+//		Bitmap bitmap=getPhoto(contact.getId());
 		if(bitmap!=null){
 			holder.photo.setImageBitmap(bitmap);
 		}else {
